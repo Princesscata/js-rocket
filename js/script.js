@@ -10,8 +10,19 @@ var car = {
     'seat 3',
     'seat 4'
   ],
-  turnOn: function (){
+  turnOn: function () {
     this.isTurnedOn = true;
+  },
+  fly: function () {
+    alert('fly');
+  },
+  switchCar: function (isON) {
+    console.log('turn car'+isOn);
+    if (isOn == true) {
+      this.isTurnedOn = true;
+    } else {
+      this.isTurnedOn = false;
+    }
   }
 };
 
